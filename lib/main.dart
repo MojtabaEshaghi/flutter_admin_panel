@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:panel_admin/constants.dart';
+import 'package:panel_admin/controller/menu_controller.dart';
 import 'package:panel_admin/screens/main/main_screen.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,12 +17,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Admin Panel',
+      title: 'Flutter Admi n Panel',
       theme: ThemeData.dark().copyWith(
           scaffoldBackgroundColor: bgColor,
           textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
           canvasColor: secondaryColor),
-      home: MainScreen(),
+      home:MultiProvider(
+        providers: [
+          ChangeNotifierProvider(create:(ctx)=>MenuController())
+        ],
+        child: MainScreen(),
+      ),
     );
   }
 }
