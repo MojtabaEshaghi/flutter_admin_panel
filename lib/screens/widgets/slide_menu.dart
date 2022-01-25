@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:panel_admin/generated/assets.dart';
 
 class SideMenu extends StatelessWidget {
+  static const routeName = "./sideMenu";
   const SideMenu({
     Key? key,
   }) : super(key: key);

@@ -8,6 +8,7 @@ import 'package:panel_admin/screens/dashboard/widget/staraged_details.dart';
 import 'package:panel_admin/screens/widgets/header.dart';
 
 class DashboardScreen extends StatelessWidget {
+  static const routeName = "/dashboardScreen";
   const DashboardScreen({Key? key}) : super(key: key);
 
   @override
@@ -16,7 +17,7 @@ class DashboardScreen extends StatelessWidget {
         child: SingleChildScrollView(
       padding: const EdgeInsets.all(defaultPadding),
       child: Column(children: [
-        const Header(),
+         Header(),
         const SizedBox(
           height: defaultPadding,
         ),
