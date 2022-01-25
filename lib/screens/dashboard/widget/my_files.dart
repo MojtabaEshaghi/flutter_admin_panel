@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:panel_admin/models/MyFiles.dart';
 import 'package:panel_admin/responsive.dart';
-
 import '../../../constants.dart';
+import '../../../core/models/MyFiles.dart';
 import 'file_info.dart';
 
 class MyFiles extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:panel_admin/constants.dart';
-import 'package:panel_admin/models/RecentFile.dart';
+import '../../../core/models/RecentFile.dart';
 
 class RecentFiles extends StatelessWidget {
   const RecentFiles({Key? key}) : super(key: key);
